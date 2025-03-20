@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-while i >= 'a' and i <= 'z':
-    print(i, end='')
+for i in range(97, 123):
+    print(chr(i), end = "")
