@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("abcdefghijklmnopqrstuvwxyz", end="")
+while i >= 'a' and i <= 'z':
+    print(i, end='')
