@@ -6,7 +6,16 @@ Division
 
 
 def matrix_divided(matrix, div):
-    """
+    """divide matrices
+
+    Args:
+    matrix: matrix to be divided
+    div: divident
+    Returns:
+    new matrixs of quotients
+    Raises:
+    TypeError: many cases
+    ZeroDivisionError: if div is zero
     """
     if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
