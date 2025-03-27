@@ -4,6 +4,7 @@ Basic addition
 """
 def add_integer(a, b=98):
     """
+
     Args:
     a: first int
     b: second int
@@ -13,6 +14,7 @@ def add_integer(a, b=98):
 
     Raises:
        TypeError: if both a and b are not numbers
+
     """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
