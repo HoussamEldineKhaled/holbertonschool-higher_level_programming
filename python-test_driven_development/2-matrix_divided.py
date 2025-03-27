@@ -25,11 +25,4 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    size = len(matrix[0])
-    if not all(len(row) == size for row in matrix):
-        raise TypeError("Each row of the matrix must have the same size")
-    new_matrix = []
-    for row in matrix:
-        new_row = [round(element / div, 2) for element in row]
-        new_matrix.append(new_row)
-    return new_matrix
+    return [[round(el / div, 2) for el in row] for row in matrix]
