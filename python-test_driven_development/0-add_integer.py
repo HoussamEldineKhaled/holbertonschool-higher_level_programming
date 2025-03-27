@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" Math integer adding module
+""" 
+Math integer adding module
 Basic addition
 """
 def add_integer(a, b=98):
-    """
-    Add integers
+    """Add integers
 
     Args:
     a: first int
