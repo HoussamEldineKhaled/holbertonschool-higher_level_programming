@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+
+""" Math integer adding module
+Basic addition
+"""
 def add_integer(a, b=98):
+    
     """
     Args:
     a: first int
@@ -8,7 +13,6 @@ def add_integer(a, b=98):
        Sume of a and b
     Raises:
        TypeError: if both a and b are not numbers
-
     """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
