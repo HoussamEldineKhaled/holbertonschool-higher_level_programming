@@ -7,8 +7,10 @@ def add_integer(a, b=98):
     Args:
     a: first int
     b: second int
+
     Returns:
        Sum of a and b
+
     Raises:
        TypeError: if both a and b are not numbers
     """
