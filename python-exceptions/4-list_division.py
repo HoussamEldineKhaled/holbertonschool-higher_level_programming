@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-def list_division(my_list_1, my_list_2, list_length):
+11;rgb:2b2b/2b2b/2b2b11;rgb:2b2b/2b2b/2b2bdef list_division(my_list_1, my_list_2, list_length):
     new_list = []
     for i in range (0, list_length):
         try:
-            if not (isinstance(my_list_1[i], (int, float)) or not (isinstance(my_list_2[i], (int, float)):
-                raise TypeError("wrong type")
             quotiant = my_list_1[i] /my_list_2[i]
         except IndexError:
             print("out of range")
