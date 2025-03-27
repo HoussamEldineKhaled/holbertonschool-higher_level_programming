@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-
 """ Math integer adding module
 Basic addition
 """
 def add_integer(a, b=98):
-    
     """
     Args:
     a: first int
     b: second int
     Returns:
-       Sume of a and b
+       Sum of a and b
     Raises:
        TypeError: if both a and b are not numbers
     """
