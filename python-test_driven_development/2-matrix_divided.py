@@ -30,6 +30,6 @@ def matrix_divided(matrix, div):
         raise TypeError("Each row of the matrix must have the same size")
     new_matrix = []
     for row in matrix:
-        new_row = ["{:.2f}".format(element / div, 2) for element in row]
+        new_row = [round(element / div, 2) for element in row]
         new_matrix.append(new_row)
     return new_matrix
