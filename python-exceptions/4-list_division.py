@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def list_division(my_list_1=None, my_list_2=None, list_length=0):
-    if not isinstance(list_length, int):
+    if not isinstance(list_length, (int, float)) or list_length < 0:
         return None
     new_list = []
     quotiant = 0
