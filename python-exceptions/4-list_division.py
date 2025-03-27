@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 def list_division(my_list_1=None, my_list_2=None, list_length=0):
-    if not isinstance(list_length, (int, float)) or list_length < 0:
-        return None
+    if my_list_1 is None or my_list_2 is None:
+        print("wrong type")
+        return [0] * list_length
     new_list = []
     quotiant = 0
     for i in range (0, list_length):
