@@ -9,6 +9,7 @@ def text_indentation(text):
 
     Args:
     text: imput string
+
     Raises:
     TypeError: if not string
     """
@@ -19,6 +20,7 @@ def text_indentation(text):
         print(text[i], end="")
         if text[i] in ".?:":
             print("\n")
+            i += 1
             while i + 1 < len(text) and text[i + 1] == ' ':
                 i += 1
         i += 1
