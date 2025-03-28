@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""
+11;rgb:2b2b/2b2b/2b2b"""
 indent text
 """
 
@@ -23,4 +23,5 @@ def text_indentation(text):
             i += 1
             while i + 1 < len(text) and text[i + 1] == ' ':
                 i += 1
+            continue
         i += 1
