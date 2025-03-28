@@ -6,7 +6,12 @@ display name of person
 
 def say_my_name(first_name, last_name=""):
     """
-    
+    Args:
+    first_name: first name
+    last_name: last name
+
+    Raises:
+    TypeError: name to be a string
     """
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
