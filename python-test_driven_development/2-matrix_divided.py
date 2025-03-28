@@ -11,8 +11,10 @@ def matrix_divided(matrix, div):
     Args:
     matrix: matrix to be divided
     div: divident
+
     Returns:
     new matrixs of quotients
+
     Raises:
     TypeError: many cases
     ZeroDivisionError: if div is zero
