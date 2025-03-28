@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-11;rgb:2b2b/2b2b/2b2b"""
+"""
 indent text
 """
 
