@@ -2,3 +2,43 @@
 
 >>> say_my_name("John", "Doe")
 My name is John Doe
+
+# Test with only first name (default last name)
+>>> say_my_name("Bob")
+My name is Bob 
+
+# Test with empty last name
+>>> say_my_name("Alice", "")
+My name is Alice 
+
+# Test with non-string first name
+>>> try:
+...     say_my_name(123, "Smith")
+... except TypeError as e:
+...     print(e)
+first_name must be a string
+
+# Test with non-string last name
+>>> try:
+...     say_my_name("John", 456)
+... except TypeError as e:
+...     print(e)
+last_name must be a string
+
+# Test with both non-string arguments
+>>> try:
+...     say_my_name(123, 456)
+... except TypeError as e:
+...     print(e)
+first_name must be a string
+
+# Test with None as first name
+>>> try:
+...     say_my_name(None, "Smith")
+... except TypeError as e:
+...     print(e)
+first_name must be a string
+
+# Test with whitespace names
+>>> say_my_name("  John  ", "  Smith  ")
+My name is   John     Smith
