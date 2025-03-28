@@ -6,7 +6,7 @@ print a square
 
 def print_square(size):
     """
-    
+
     Args:
     size: size of matrix
 
