@@ -10,6 +10,10 @@ class Square:
 
         Args: 
            size (int): size of the square
+
+        Raises:
+           TypeError: if not int
+           ValueError: if less than zero
         """
         self.__size = size
         if not isinstance(self.__size, int):
@@ -22,4 +26,4 @@ class Square:
         Returns:
              int: square area
         """
-        return self.__size * self.__size
+        return self.__size ** 2
