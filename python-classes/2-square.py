@@ -4,11 +4,12 @@
 
 class Square:
     """making a more safe square"""
-    
+
     def __init__(self, size=0):
         """initialize square
 
-        Args:size of the square
+        Args:
+           size (INT): of the square
         """
         self.__size = size
         if not isinstance(self.__size, int):
