@@ -17,4 +17,9 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
     def area(self):
+        """find area
+
+        Returns:
+             int: square area
+        """
         return self.__size * self.__size
