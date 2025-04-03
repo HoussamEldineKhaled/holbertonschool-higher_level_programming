@@ -14,6 +14,7 @@ class Square:
         """
         self.size = size
         self.position = position
+
     @property
     def size(self):
         """get the size of the square
@@ -42,7 +43,7 @@ class Square:
 
     @property
     def position(self):
-        """get the position cordinates
+        """get the position coordinates
 
         Returns:
            int: position
