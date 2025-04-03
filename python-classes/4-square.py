@@ -17,7 +17,7 @@ class Square:
     def size(self):
         """set square size
 
-        Returns: 
+        Returns:
              int: size of square
         """
         return self.__size
