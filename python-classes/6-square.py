@@ -19,7 +19,7 @@ class Square:
     def size(self):
         """get the size of the square
 
-        Returns:
+        Return:
            int: size of the square
         """
         return self.__size
@@ -45,7 +45,7 @@ class Square:
     def position(self):
         """get the position coordinates
 
-        Returns:
+        Return:
            int: position
         """
         return self.__position
