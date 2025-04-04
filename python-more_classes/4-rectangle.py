@@ -88,6 +88,7 @@ class Rectangle:
         for i in range(0, self.__height):
             rectangle_arr.append("#" * self.__width)
         return "\n".join(rectangle_arr)
+
     def __repr__(self):
         """representation of rectangle atributes
 
