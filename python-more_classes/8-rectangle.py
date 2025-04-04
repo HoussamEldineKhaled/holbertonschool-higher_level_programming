@@ -92,7 +92,7 @@ class Rectangle:
             return ""
         rectangle_arr = []
         for i in range(0, self.__height):
-            rectangle_arr.append(str(Rectangle.print_symbol) * self.__width)
+            rectangle_arr.append(str(self.print_symbol) * self.__width)
         return "\n".join(rectangle_arr)
 
     def __repr__(self):
@@ -106,3 +106,24 @@ class Rectangle:
         """message to be printed when deletion"""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+
+    def bigger_or_equal(rect_1, rect_2):
+        """compare two squares
+
+        Args:
+          rect_1 (Rectangle): rectangle
+          rect_2 (Rectangle): rectangle
+
+        Raises:
+           TypeError: if rectangles are not Rectangle data types
+
+        Return: one of the two rectangles lol
+        """
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        if rect_1.area() >= rect_2.area():
+            return rect_1
+        else:
+            return rect_2
