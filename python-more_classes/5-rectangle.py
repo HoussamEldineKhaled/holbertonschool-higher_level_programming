@@ -95,6 +95,6 @@ class Rectangle:
         Return: coordinates of the rectangle
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
-    def __def__(self):
+    def __del__(self):
         """message to be printed when deletion"""
         print("Bye rectangle...")
