@@ -1,0 +1,1 @@
+inheritance in python will be explored in this section
