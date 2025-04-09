@@ -6,6 +6,6 @@ class MyList(list):
     """
     print a sorted list
     """
-    
+
     def print_sorted(self):
         print("{}".format(sorted(self)))
