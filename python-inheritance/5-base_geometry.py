@@ -2,6 +2,6 @@
 """geo base"""
 
 
-class BaseGeomertry:
+class BaseGeometry:
     """base geo class"""
     pass
