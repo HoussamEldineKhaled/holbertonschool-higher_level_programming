@@ -4,4 +4,4 @@
 
 def inherits_from(obj, a_class):
     """check if subclass"""
-    return isinstance(obj, a_class)
+    return issubclass(obj, a_class)
