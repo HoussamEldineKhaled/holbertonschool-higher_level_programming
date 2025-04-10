@@ -2,5 +2,5 @@
 """geo base"""
 
 
-class BaseGeomertry:
+class BaseGeomertry():
     """base geo class"""
