@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """square stuff"""
-Rectangle = __import__('9-rectangle.py').Rectangle
+
+
+Rectangle = __import__('9-rectangle').Rectangle
+
 
 class Square(Rectangle):
     """square class"""
@@ -21,3 +24,10 @@ class Square(Rectangle):
         Return: the area
         """
         return self.__size ** 2
+
+    def __str__(self):
+        """
+
+        Return: string format
+        """
+        return "[Square] {}/{}".format(self.__size, self.__size)
