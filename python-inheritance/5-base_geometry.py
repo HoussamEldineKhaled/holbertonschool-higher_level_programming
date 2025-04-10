@@ -4,3 +4,4 @@
 
 class BaseGeomertry():
     """base geo class"""
+    pass
