@@ -41,7 +41,7 @@ class Circle(Shape):
 
 class Rectangle(Shape):
     """rectangle"""
-    
+
     def __init__(self, width, height):
         """
 
