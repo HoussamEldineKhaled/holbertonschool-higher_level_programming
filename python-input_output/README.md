@@ -1,0 +1,1 @@
+today we learn how to read and write in the python
