@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""""""
+"""just reading"""
 
 def read_file(filename=""):
     """read text file
