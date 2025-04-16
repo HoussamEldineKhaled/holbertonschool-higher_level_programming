@@ -14,4 +14,4 @@ def from_json_string(my_str):
     Return: the json parse
     """
 
-    return json.parse(my_str)
+    return json.loads(my_str)
