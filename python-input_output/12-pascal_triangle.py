@@ -8,6 +8,15 @@ def pascal_triangle(n):
     if n <= 0:
         return []
 
-    list = []
+    final_list = [[]]
 
-    
+    for i in range(1, n):
+        row_last = final_list[-1]
+
+        new_row = [1]
+
+        for j in range (1, i):
+            new_row.append(row_last[j - 1] + row_last[j])
+        new_row.append(1)
+        final_list.append(new_row)
+    return final_list
