@@ -8,7 +8,7 @@ def pascal_triangle(n):
     if n <= 0:
         return []
 
-    final_list = [[]]
+    final_list = []
 
     for i in range(1, n):
         row_last = final_list[-1]
