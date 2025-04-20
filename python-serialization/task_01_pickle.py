@@ -17,11 +17,11 @@ class CustomObject:
         print("Age: {}".format(self.age))
         print("Is Student: {}".format(self.is_student))
     
-    def serlialize(self, filename):
+    def serialize(self, filename):
 
         try:
             with open(filename, "wb") as file:
-                pickle.dump(self, filename)
+                pickle.dump(self, file)
         except (pickle.PickleError, IOError, Exception) as e:
             return None
 
@@ -29,6 +29,6 @@ class CustomObject:
     def deserialize(cls, filename):
         try:
             with open(filename, "rb") as file:
-                return pickle.load(cls)
+                return pickle.load(file)
         except (pickle.PickleError, IOError, Exception) as e:
             return None
