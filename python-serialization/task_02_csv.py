@@ -11,10 +11,8 @@ def convert_csv_to_json(file_name):
 
             data = [row for row in reader]
 
-        serialized_data = json.dumps(data, indent=4)
-
         with open("data.json", "w", encoding="utf-8") as file:
-            json.write(serialized_data)
+            json.dump(data, file, indent=4)
         return True
     except FileNotFoundError, Exception:
         return False
