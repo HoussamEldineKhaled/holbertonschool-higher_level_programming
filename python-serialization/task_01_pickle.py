@@ -12,6 +12,11 @@ class CustomObject:
         self.age = age
         self.is_student = is_student
 
+    def display(self):
+        print("Name: {}".format(self.name))
+        print("Age: {}".format(self.age))
+        print("Is Student: {}".format(self.is_student))
+    
     def serlialize(self, filename):
 
         try:
