@@ -1,5 +1,11 @@
 #!/usr/bin/python3
-import http.server
-import socketserver
+from http.server import BaseHTTPRequestHandler, HTTPServer
 
 
+class HTTPRequestHandler(BaseHTTPRequestHandler):
+
+    def do_Get(self):
+        self.end_response(200)
+        self.end_headers()
+        self.wfile.write(b"Hello, this is a simple API!")
+        
