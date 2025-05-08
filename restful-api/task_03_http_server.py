@@ -4,7 +4,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 class HTTPRequestHandler(BaseHTTPRequestHandler):
 
-    def do_Get(self):
+    def do_GET(self):
         self.send_response(200)
         self.end_headers()
         self.wfile.write(b'Hello, this is a simple API!')
