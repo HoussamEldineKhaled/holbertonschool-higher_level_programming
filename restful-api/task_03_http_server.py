@@ -19,7 +19,14 @@ class HTTPRequestHandler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(dataset).encode('utf-8'))
         elif self.path == '/status':
             self.send_response(200)
-            
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            self.wfile.write("OK".encode('utf-8'))
+        else:
+            self.send_response(404)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            self.wfile.write('404 Not Found'.encode('utf-8'))
 
 
 if __name__ == '__main__':
