@@ -5,6 +5,7 @@ from flask import requests
 
 
 app = Flask(__name__)
+
 users = {}
 
 @app.route('/')
@@ -19,17 +20,16 @@ def fill_Data():
 
 @app.route('/status')
 
-def Ok():
+def status():
     return "OK"
 
-@app.route('/users/<username>', methods=['GET'])
+@app.route('/users/<username>')
 
 def get_user(username):
     user = users.get(username)
     if user:
         return jsonify(user)
-    else:
-        return jsonify({"error": "User not found"}), 404
+    return jsonify({"error": "User not found"}), 404
 
 @app.route('/add_user', methods=['POST'])
 
