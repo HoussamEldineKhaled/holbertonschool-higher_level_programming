@@ -6,6 +6,7 @@ from flask_jwt_extended import create_access_token
 from flask_jwt_extended import get_jwt_identity
 from flask_jwt_extended import jwt_required
 from flask_jwt_extended import JWTManager
+from flask_jwt_extended import get_jwt
 
 
 app = Flask(__name__)
@@ -24,14 +25,14 @@ users = {
 }
 
 
-@basic_auth.verify_password
+@auth.verify_password
 def verify_password(username, password):
     if username in users and check_password_hash(users[username]['password'], password):
         return username
     return None
 
 
-@basic_auth.error_handler
+@auth.error_handler
 def basic_auth_error(status):
     return jsonify({"error": "Unauthorized"}), status
 
@@ -57,10 +58,10 @@ def handle_needs_fresh_token_error(err):
     return jsonify({"error": "Fresh token required"}), 401
 
 
-@app.rout('/basic-protected', methods=['GET'])
+@app.route('/basic-protected', methods=['GET'])
 @auth.login_required
-def basicProtected():
-    return ("message": "Basic Auth: Access Granted")
+def basic_Protected():
+    return jsonify({"message": "Basic Auth: Access Granted"})
 
 
 @app.route('/login', methods=['POST'])
@@ -91,5 +92,5 @@ def admin_only():
         return jsonify({"error": "Admin access required"}), 403
     return jsonify({"message": "Admin Access: Granted"})
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     app.run(debug=True)
