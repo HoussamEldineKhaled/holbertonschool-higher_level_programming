@@ -24,7 +24,9 @@ users = {
 }
 
 
-@basic_auth.verify_password
+
+
+@basic_auth.error_handler
 def basic_auth_error(status):
     return jsonify({"error": "Unauthorized"}), status
 
