@@ -1,0 +1,2 @@
+-- states table
+CREATE DATABASE IF NOT EXISTS 
