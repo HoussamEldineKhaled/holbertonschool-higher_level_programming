@@ -1,0 +1,5 @@
+-- list shows and genres
+SELECT tv_shows.title, tv_genres.name
+FROM tv_shows, tv_genres
+
+ORDER BY tv_shows.title ASC, tv_genres.name ASC;
